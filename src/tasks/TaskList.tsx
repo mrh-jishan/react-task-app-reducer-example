@@ -75,7 +75,7 @@ function Task({ task, onChange, onDelete }: TaskProps) {
         }}
       />
       {taskContent}
-      <button onClick={() => onDelete(task.id)}>
+      <button onClick={() => onDelete(task.id as number)}>
         Delete
       </button>
     </label>
